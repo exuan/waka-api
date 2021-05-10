@@ -1,0 +1,11 @@
+[common]
+srvName = "waka-api"
+srvAddr = ":25000"
+logPath = "/data/logs/go/"
+db = [
+    {name = "default", type = "postgres", dsn = "host=127.0.0.1 user=default password=secret dbname=default port=5432 sslmode=disable TimeZone=Asia/Shanghai", prefix = "wa_" }
+]
+[develop]
+
+[release]
+srvAddr = ":18000"
